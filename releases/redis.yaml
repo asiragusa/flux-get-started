@@ -15,8 +15,8 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
-    version: 5.1.3
-    #version: 9.5.0
+    #version: 5.1.3
+    version: 9.5.0
   rollback:
     enable: true
   valueFileSecrets:
