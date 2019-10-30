@@ -16,6 +16,8 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
     version: 9.5.0
+  rollback:
+    enable: true
   valueFileSecrets:
     # the redis-auth secret contains the password value
     - name: redis-auth
