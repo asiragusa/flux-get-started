@@ -1,0 +1,2 @@
+mongodb_image_tag: 4.0.6
+mongodb_chart_version: 4.9.0
