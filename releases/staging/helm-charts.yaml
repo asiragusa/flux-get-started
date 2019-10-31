@@ -1,0 +1,15 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: helm-charts
+  namespace: flux
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/locked: "true"
+spec:
+  releaseName: helm-charts
+  chart:
+    git: ssh://git@github.com/asiragusa/flux-get-started
+    ref: master
+    path: charts/helm-charts
