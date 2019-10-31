@@ -15,8 +15,7 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: redis
-    version: 5.1.3
-    #version: 9.5.0
+    version: {{ .Values.redis_chart_version }}
   rollback:
     enable: true
   valueFileSecrets:
@@ -26,7 +25,7 @@ spec:
     usePassword: true
     image:
       repository: bitnami/redis
-      tag: 4.0.12
+      tag: {{ .Values.redis_image_tag }}
     service:
       type: ClusterIP
       port: 6379
