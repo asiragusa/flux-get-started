@@ -25,6 +25,3 @@ spec:
     mariadb:
       persistence:
         enabled: false
-    resources:
-      requests:
-        cpu:...
