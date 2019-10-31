@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "false"
     fluxcd.io/locked: "true"
 spec:
-  releaseName: ghost
+  releaseName: helm-charts
   chart:
     git: ssh://git@github.com/asiragusa/flux-get-started
     ref: master
